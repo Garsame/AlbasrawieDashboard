@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Like Dashboard</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .sidebar {
+            
+            padding: 10px 0;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            /* background-color: #007bff; */
+            color: white;
+        }
+
+        /* Hide scrollbar but keep scrolling functionality */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .sidebar {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .sidebar::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+
+    .sidebar a {
+        flex: 0 0 auto;
+        text-align: center;
+        padding: 10px 15px;
+        margin: 0 5px;
+    }
+
+    .sidebar i {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4">
+        <div class="container-fluid align-items-center">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/title_icon.png" alt="brand logo" width="20px">
+                    <span class="fw-bold ms-2">Albasrawie</span>
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa-regular fa-bell fs-4 me-4"></i>
+                <img src="https://via.placeholder.com/30" alt="User" class="rounded-circle">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-12 order-md-1 order-lg-0 sidebar p-0">
+                <a href="#" class="active link-font"><i class="fa-solid fa-house-user ms-3 fs-5"></i>Hoy</a>
+                <a href="#" class="link-font"><i class="fa-regular fa-address-card ms-3 fs-5"></i>Xogtaada</a>
+                <a href="#" class="link-font"><i class="fa-solid fa-book-open-reader ms-3 fs-5"></i>Casharada</a>
+                <a href="#" class="link-font"><i class="fa-solid fa-list-check ms-3 fs-5"></i>Dir Waxqabad</a>
+                <a href="#" class="link-font"><i class="fa-solid fa-list-check ms-3 fs-5"></i>Howlmaalmeed</a>
+                <a href="#" class="link-font"><i class="fa-solid fa-list-check ms-3 fs-5"></i>Dalbo Caawinaad</a>
+                <a href="#" class="link-font"><i class="fa-solid fa-list-check ms-3 fs-5"></i>Fidi Caawinaad</a>
+                <a href="#" class="link-font"><i class="fa-solid fa-list-check ms-3 fs-5"></i>Halcelinta Caawinaadda</a>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-12 col-lg-7 order-md-2 order-lg-1 main-content text-center mt-3">
+                <h1>Qaybta Waxyaabaha Ugu Muhiimsan</h1>
+                <p>Waxa aad ku soo bandhigi kartaa macluumaadka muhiimka ah ee isticmaaleha halkan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
